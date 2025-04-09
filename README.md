@@ -1,4 +1,4 @@
-# Education-Performance-Analysis
+# Education Performance Analysis
 An analysis of student academic performance based on demographic and behavioral factors.
 
 # Table of Content
@@ -30,64 +30,40 @@ The aim of this project is to analyze how student performance (measured by exam 
 # Dataset
 The dataset includes the following columns:
 
-`Age`: Age of student
+- `Age`: Age of student
+- `Gender`: Student's gender
+- `Region`: Student’s region of origin
+- `Socioeconomic_Status`: Socioeconomic class of the student
+- `Attendance (%)`: Percentage of days the student was present
+- `Exam_Score`: Student's score in final exam
 
-Gender: Student's gender
-
-Region: Student’s region of origin
-
-Socioeconomic_Status: Socioeconomic class of the student
-
-Attendance (%): Percentage of days the student was present
-
-Exam_Score: Student's score in final exam
-
-Data Inspection
+# Data Inspection
 Used .info() and .head() to inspect the dataset structure, data types, and sample entries. Checked for missing values and ensured the dataset was structured properly for analysis.
 
-Data Cleaning
-Verified and converted column data types.
+# Data Cleaning
+- Verified and converted column data types.
+- Checked for and handled missing values.
+- Ensured categorical variables were correctly encoded.
+- Removed or treated outliers for accuracy in visualization and modeling.
 
-Checked for and handled missing values.
+# Exploratory Data Analysis
+## 1. Overview of the Data
+- Descriptive Statistics: Used .describe() and other methods to summarize mean, median, standard deviation, etc.
+- Data Distribution: Visualized distributions of Age, Attendance (%), and Exam_Score using histograms and boxplots.
+- Check for Outliers: Identified and visualized outliers using box plots and z-score analysis.
 
-Ensured categorical variables were correctly encoded.
+## 2. Comparative Analysis
+- Exam Score vs Gender: Compared average exam scores between male and female students.
+- Exam Score vs Region: Analyzed performance trends across different regions.
+- Exam Score vs Socioeconomic Status: Investigated how exam scores vary with socioeconomic background.
+- Attendance vs Gender: Explored if gender has any effect on attendance rates.
+- Attendance vs Region: Checked regional patterns in attendance.
+- Attendance vs Socioeconomic Status: Assessed attendance trends across different socioeconomic levels.
 
-Removed or treated outliers for accuracy in visualization and modeling.
+## 3. Correlation
+- Correlation Matrix: Used a scatter plot to examine relationships between students' Attendance (%), and Exam_Score.
 
-Exploratory Data Analysis
-1. Overview of the Data
-Descriptive Statistics: Used .describe() and other methods to summarize mean, median, standard deviation, etc.
 
-Data Distribution: Visualized distributions of Age, Attendance (%), and Exam_Score using histograms and boxplots.
-
-Check for Outliers: Identified and visualized outliers using box plots and z-score analysis.
-
-2. Comparative Analysis
-Exam Score vs Gender: Compared average exam scores between male and female students.
-
-Exam Score vs Region: Analyzed performance trends across different regions.
-
-Exam Score vs Socioeconomic Status: Investigated how exam scores vary with socioeconomic background.
-
-Attendance vs Gender: Explored if gender has any effect on attendance rates.
-
-Attendance vs Region: Checked regional patterns in attendance.
-
-Attendance vs Socioeconomic Status: Assessed attendance trends across different socioeconomic levels.
-
-3. Correlation & Hypothesis Testing
-Correlation Matrix: Used heatmaps to examine relationships between numerical features like Age, Attendance (%), and Exam_Score.
-
-T-tests & Chi-Square Tests: Conducted statistical tests to assess significance of observed relationships between categorical and continuous variables.
-
-4. Predictive Modeling
-Regression Analysis: Built regression models to predict exam scores based on demographic and behavioral data.
-
-Classification Models: Considered decision trees and logistic regression for categorizing performance levels.
-
-5. Clustering Analysis
-Applied K-means clustering on Exam_Score and Attendance (%) to identify natural groupings of student performance and engagement.
-
-Contributions
+# Contributions
 Contributions are welcome! Please feel free to open an issue or submit a pull request for improvements, suggestions, or enhancements.
 
